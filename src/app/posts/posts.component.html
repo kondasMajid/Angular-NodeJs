@@ -1,21 +1,22 @@
-<!-- <h2>Hello world</h2> -->
-<button btn btn-primary> hjkh</button>
-<table>
+
+
+<table class="table table-striped">
     <thead>
-        <tr>
-            <th scope="col">User Id</th>
+      <tr >
+        <!-- <th scope="col">User Id</th> -->
+        <th scope="col"> UserId</th>
             <th scope="col"> Id</th>
             <th scope="col">Title</th>
             <th scope="col">Body</th>
-        </tr>
+      </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let post of posts">
-            <td>{{post.userId}}</td>
-            <td>{{post.id}}</td>
-            <td>{{post.tittl}}</td>
-            <td>{{post.body}}</td>
-        </tr>
-
+      <tr *ngFor="let post of posts">
+        <th>{{post.userId}}</th>
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+      </tr>
+   
     </tbody>
-</table>
+  </table>
